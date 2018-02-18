@@ -1,3 +1,5 @@
+[API Documentation: Click here](https://manuw.github.io/postgresql-swift/docs/)
+
 # postgresql-swift
 
 PostgreSQL swift adapter
@@ -12,7 +14,7 @@ The adapter is not complete and not fully tested.
 
 ## Documentation and Examples
 
-The api documentation can be found at: [https://manuw.github.io/postgresql-swift/doc/](https://manuw.github.io/postgresql-swift/doc/)
+The api documentation can be found at: [https://manuw.github.io/postgresql-swift/docs/](https://manuw.github.io/postgresql-swift/docs/)
 
 Under _sources_ are some example folders. The examples have comments.
 
