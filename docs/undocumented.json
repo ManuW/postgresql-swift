@@ -1,0 +1,215 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 57,
+      "symbol": "PGError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 58,
+      "symbol": "PGError.fatal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 59,
+      "symbol": "PGError.unexpectedResult",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 60,
+      "symbol": "PGError.invalidConnStatus",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 61,
+      "symbol": "PGError.sendQueryError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 62,
+      "symbol": "PGError.consumeInputError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 201,
+      "symbol": "PGTransactionStatus.init(transStatus:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 248,
+      "symbol": "PGResultStatus.emptyQuery",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 249,
+      "symbol": "PGResultStatus.commandOK",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 250,
+      "symbol": "PGResultStatus.tuplesOK",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 251,
+      "symbol": "PGResultStatus.copyOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 252,
+      "symbol": "PGResultStatus.copyIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 253,
+      "symbol": "PGResultStatus.badResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 254,
+      "symbol": "PGResultStatus.nonfatalError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 255,
+      "symbol": "PGResultStatus.fatalError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 256,
+      "symbol": "PGResultStatus.copyBoth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 257,
+      "symbol": "PGResultStatus.singleTuple",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 259,
+      "symbol": "PGResultStatus.init(execStatus:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 287,
+      "symbol": "PGResult",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 493,
+      "symbol": "PGResult.stringValue(rowNumber:columnNumber:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 552,
+      "symbol": "PGNotify.notify",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 554,
+      "symbol": "PGNotify.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 558,
+      "symbol": "PGNotify.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 562,
+      "symbol": "PGNotify.clean()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 566,
+      "symbol": "PGNotify.channel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 573,
+      "symbol": "PGNotify.pid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 577,
+      "symbol": "PGNotify.payload",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 608,
+      "symbol": "PGConnection.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 894,
+      "symbol": "PGConnection.eachResult(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/emkei/Projects/Programming/OS X/postgresql-swift/Sources/postgresql-swift/postgresql_swift.swift",
+      "line": 937,
+      "symbol": "PGConnection.eachNotification(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/emkei/Projects/Programming/OS X/postgresql-swift"
+}

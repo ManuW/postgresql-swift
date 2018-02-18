@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGResultStatus Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/PGResultStatus" class="dashAnchor"></a>
+    <a title="PGResultStatus Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">postgresql_swift Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">postgresql_swift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PGResultStatus Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PGConnection.html">PGConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGNotify.html">PGNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGResult.html">PGResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PGConnStatus.html">PGConnStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGError.html">PGError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGResultStatus.html">PGResultStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGTransactionStatus.html">PGTransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PGResultStatus</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PGResultStatus</span></code></pre>
+
+                </div>
+              </div>
+            <p>Result Status</p>
+
+<p><em>values</em></p>
+
+<p><code>emptyQuery</code> The string sent to the server was empty.</p>
+
+<p><code>commandOK</code> Successful completion of a command returning no data.</p>
+
+<p><code>tuplesOK</code> Successful completion of a command returning data (such as a SELECT or SHOW).</p>
+
+<p><code>copyOut</code> Copy Out (from server) data transfer started.</p>
+
+<p><code>copyIn</code> Copy In (to server) data transfer started.</p>
+
+<p><code>badResponse</code> The server&rsquo;s response was not understood.</p>
+
+<p><code>nonfatalError</code> A nonfatal error (a notice or warning) occurred.</p>
+
+<p><code>fatalError</code> A fatal error occurred.</p>
+
+<p><code>copyBoth</code> Copy In/Out (to and from server) data transfer started.
+This feature is currently used only for streaming replication, so this status
+should not occur in ordinary applications.</p>
+
+<p><code>singleTuple</code> The PGresult contains a single result tuple from the current command.
+This status occurs only when single-row mode has been selected for the query</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO10emptyQueryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/emptyQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO10emptyQueryA2CmF">emptyQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">emptyQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO9commandOKA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/commandOK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO9commandOKA2CmF">commandOK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">commandOK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO8tuplesOKA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tuplesOK" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO8tuplesOKA2CmF">tuplesOK</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tuplesOK</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO7copyOutA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/copyOut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO7copyOutA2CmF">copyOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">copyOut</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO6copyInA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/copyIn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO6copyInA2CmF">copyIn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">copyIn</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO11badResponseA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/badResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO11badResponseA2CmF">badResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">badResponse</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO13nonfatalErrorA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/nonfatalError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO13nonfatalErrorA2CmF">nonfatalError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">nonfatalError</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO10fatalErrorA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/fatalError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO10fatalErrorA2CmF">fatalError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">fatalError</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO8copyBothA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/copyBoth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO8copyBothA2CmF">copyBoth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">copyBoth</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO11singleTupleA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/singleTuple" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO11singleTupleA2CmF">singleTuple</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">singleTuple</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusOACSgSC04ExecD4TypeV04execD0_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(execStatus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusOACSgSC04ExecD4TypeV04execD0_tcfc">init(execStatus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="nv">execStatus</span><span class="p">:</span> <span class="kt">ExecStatusType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

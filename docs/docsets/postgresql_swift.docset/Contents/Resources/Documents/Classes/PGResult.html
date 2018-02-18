@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGResult Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PGResult" class="dashAnchor"></a>
+    <a title="PGResult Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">postgresql_swift Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">postgresql_swift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PGResult Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PGConnection.html">PGConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGNotify.html">PGNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGResult.html">PGResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PGConnStatus.html">PGConnStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGError.html">PGError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGResultStatus.html">PGResultStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGTransactionStatus.html">PGTransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PGResult</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PGResult</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC8pgResults13OpaquePointerVv"></a>
+                    <a name="//apple_ref/swift/Property/pgResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC8pgResults13OpaquePointerVv">pgResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The result pointer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pgResult</span><span class="p">:</span> <span class="kt">OpaquePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultCACs13OpaquePointerV6result_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultCACs13OpaquePointerV6result_tcfc">init(result:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init with an valid result pointer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt">OpaquePointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultCfd"></a>
+                    <a name="//apple_ref/swift/Method/deinit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultCfd">deinit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Frees the storage associated with a PGresult.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">deinit</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC5clear33_8A793DAF0209DF271BE5EC4561B1978CLLyyF"></a>
+                    <a name="//apple_ref/swift/Method/clear()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC5clear33_8A793DAF0209DF271BE5EC4561B1978CLLyyF">clear()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Frees the storage associated with a PGresult.</p>
+
+<p>You can keep a PGresult object around for as long as you need it; it does not
+go away when you issue a new command, nor even if you close the connection.
+To get rid of it, you must call PQclear. Failure to do this will result in
+memory leaks in your application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">clear</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC9rawStatusSC04ExecE4TypeVv"></a>
+                    <a name="//apple_ref/swift/Property/rawStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC9rawStatusSC04ExecE4TypeVv">rawStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Raw result status of the command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">rawStatus</span><span class="p">:</span> <span class="kt">ExecStatusType</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC6statusAA0C6StatusOSgv"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC6statusAA0C6StatusOSgv">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result status of the command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/PGResultStatus.html">PGResultStatus</a></span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC12statusStringSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/statusString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC12statusStringSSSgv">statusString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Readable result status of the command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">statusString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC12errorMessageSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/errorMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC12errorMessageSSSgv">errorMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error message associated with the command, or nil if there was no error or
+the returned error message is empty.</p>
+
+<p>If there was an error, the returned string will include a trailing newline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC12numberOfRowss5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/numberOfRows" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC12numberOfRowss5Int32Vv">numberOfRows</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of rows (tuples) in the query result.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">numberOfRows</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC15numberOfColumnss5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/numberOfColumns" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC15numberOfColumnss5Int32Vv">numberOfColumns</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of columns (fields) in each row of the query result.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">numberOfColumns</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC10columnNameSSSgs5Int32V0D6Number_tF"></a>
+                    <a name="//apple_ref/swift/Method/columnName(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC10columnNameSSSgs5Int32V0D6Number_tF">columnName(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the column name associated with the given column number.</p>
+
+<p>Column numbers start at 0. The caller should not free the result directly.
+nil is returned if the column number is out of range.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">columnName</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC12columnNumbers5Int32VSS0D4Name_tF"></a>
+                    <a name="//apple_ref/swift/Method/columnNumber(columnName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC12columnNumbers5Int32VSS0D4Name_tF">columnNumber(columnName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the column number associated with the given column name.</p>
+
+<p>-1 is returned if the given name does not match any column.</p>
+
+<p>The given name is treated like an identifier in an SQL command, that is, it
+is downcased unless double-quoted. For example, given a query result generated
+from the SQL command:</p>
+
+<p><code>SELECT 1 AS FOO, 2 AS &quot;BAR&quot;;</code></p>
+
+<p>we would have the results:</p>
+
+<p><code>columnName(0) -&gt; foo</code></p>
+
+<p><code>columnName(1) -&gt; BAR</code></p>
+
+<p><code>columnNumber(&quot;FOO&quot;) -&gt; 0</code></p>
+
+<p><code>columnNumber(&quot;foo&quot;) -&gt; 0</code></p>
+
+<p><code>columnNumber(&quot;BAR&quot;) -&gt; -1</code></p>
+
+<p><code>columnNumber(&quot;\&quot;BAR\&quot;&quot;) -&gt; 1</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">columnNumber</span><span class="p">(</span><span class="nv">columnName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC9columnOids6UInt32Vs5Int32V0D6Number_tF"></a>
+                    <a name="//apple_ref/swift/Method/columnOid(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC9columnOids6UInt32Vs5Int32V0D6Number_tF">columnOid(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the OID of the table from which the given column was fetched.</p>
+
+<p>Column numbers start at 0. InvalidOid is returned if the column number is
+out of range, or if the specified column is not a simple reference to a table
+column, or when using pre-3.0 protocol. You can query the system table
+pg_class to determine exactly which table is referenced.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">columnOid</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Oid</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC17tableColumnNumbers5Int32VAF06columnF0_tF"></a>
+                    <a name="//apple_ref/swift/Method/tableColumnNumber(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC17tableColumnNumbers5Int32VAF06columnF0_tF">tableColumnNumber(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the column number (within its table) of the column making up the specified query result column.</p>
+
+<p>Query-result column numbers start at 0, but table columns have nonzero numbers.
+Zero is returned if the column number is out of range, or if the specified
+column is not a simple reference to a table column, or when using pre-3.0 protocol.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tableColumnNumber</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC10formatCodes5Int32VAF12columnNumber_tF"></a>
+                    <a name="//apple_ref/swift/Method/formatCode(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC10formatCodes5Int32VAF12columnNumber_tF">formatCode(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the format code indicating the format of the given column.</p>
+
+<p>Column numbers start at 0. Format code zero indicates textual data representation,
+while format code one indicates binary representation. (Other codes are reserved
+for future definition.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">formatCode</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC8dataTypes6UInt32Vs5Int32V12columnNumber_tF"></a>
+                    <a name="//apple_ref/swift/Method/dataType(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC8dataTypes6UInt32Vs5Int32V12columnNumber_tF">dataType(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the data type associated with the given column number.</p>
+
+<p>The integer returned is the internal OID number of the type. Column numbers
+start at 0. You can query the system table pg_type to obtain the names and
+properties of the various data types. The OIDs of the built-in data types
+are defined in the file src/include/catalog/pg_type.h in the source tree.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dataType</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Oid</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC12typeModifiers5Int32VAF12columnNumber_tF"></a>
+                    <a name="//apple_ref/swift/Method/typeModifier(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC12typeModifiers5Int32VAF12columnNumber_tF">typeModifier(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the type modifier of the column associated with the given column number.</p>
+
+<p>Column numbers start at 0. The interpretation of modifier values is type-specific;
+they typically indicate precision or size limits. The value -1 is used to
+indicate “no information available”. Most data types do not use modifiers,
+in which case the value is always -1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">typeModifier</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC10columnSizes5Int32VAF0D6Number_tF"></a>
+                    <a name="//apple_ref/swift/Method/columnSize(columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC10columnSizes5Int32VAF0D6Number_tF">columnSize(columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the size in bytes of the column associated with the given column number.</p>
+
+<p>Column numbers start at 0. PQfsize returns the space allocated for this column
+in a database row, in other words the size of the server&rsquo;s internal representation
+of the data type. (Accordingly, it is not really very useful to clients.) A
+negative value indicates the data type is variable-length.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">columnSize</span><span class="p">(</span><span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC5value33_8A793DAF0209DF271BE5EC4561B1978CLLSpys4Int8VGSgs5Int32V9rowNumber_AK06columnN0tF"></a>
+                    <a name="//apple_ref/swift/Method/value(rowNumber:columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC5value33_8A793DAF0209DF271BE5EC4561B1978CLLSpys4Int8VGSgs5Int32V9rowNumber_AK06columnN0tF">value(rowNumber:columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a single field value of one row of a PGresult.</p>
+
+<p>Row and column numbers start at 0.</p>
+
+<p><code>nil</code> is returned if the field value is null. See <code>getIsNil()</code> to distinguish
+null values from empty-string values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">value</span><span class="p">(</span><span class="nv">rowNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int8</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC11stringValueSSSgs5Int32V9rowNumber_AG06columnH0tF"></a>
+                    <a name="//apple_ref/swift/Method/stringValue(rowNumber:columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC11stringValueSSSgs5Int32V9rowNumber_AG06columnH0tF">stringValue(rowNumber:columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stringValue</span><span class="p">(</span><span class="n">rowNumber</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="n">columnNumber</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC5isNilSbs5Int32V9rowNumber_AF06columnH0tF"></a>
+                    <a name="//apple_ref/swift/Method/isNil(rowNumber:columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC5isNilSbs5Int32V9rowNumber_AF06columnH0tF">isNil(rowNumber:columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tests a field for a null value.</p>
+
+<p>Row and column numbers start at 0. This function returns <code>true</code> if the field
+is <code>nil</code> and <code>false</code> if it contains a non-null value. (Note that <code>value()</code>
+will return an empty string, not nil, for a nil field.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isNil</span><span class="p">(</span><span class="nv">rowNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC6lengths5Int32VAF9rowNumber_AF06columnG0tF"></a>
+                    <a name="//apple_ref/swift/Method/length(rowNumber:columnNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC6lengths5Int32VAF9rowNumber_AF06columnG0tF">length(rowNumber:columnNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the actual length of a field value in bytes.</p>
+
+<p>Row and column numbers start at 0. This is the actual data length for the
+particular data value, that is, the size of the object pointed to by <code>value()</code>.
+For text data format this is the same as <code>strlen()</code>. For binary format this
+is essential information. Note that one should not rely on <code>columnSize()</code> to
+obtain the actual data length.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">length</span><span class="p">(</span><span class="nv">rowNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">columnNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC17numberOfParameters5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/numberOfParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC17numberOfParameters5Int32Vv">numberOfParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of parameters of a prepared statement.</p>
+
+<p>This property is only useful when inspecting the result of
+<code>describePrepared()</code>. For other types of queries it will return zero.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">numberOfParameter</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift8PGResultC8dataTypes6UInt32Vs5Int32V15parameterNumber_tF"></a>
+                    <a name="//apple_ref/swift/Method/dataType(parameterNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift8PGResultC8dataTypes6UInt32Vs5Int32V15parameterNumber_tF">dataType(parameterNumber:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the data type of the indicated statement parameter.</p>
+
+<p>Parameter numbers start at 0. This function is only useful when inspecting
+the result of <code>describePrepared()</code>. For other types of queries it will return zero.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dataType</span><span class="p">(</span><span class="nv">parameterNumber</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Oid</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

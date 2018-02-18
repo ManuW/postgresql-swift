@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enumerations  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Enumerations  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">postgresql_swift Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">postgresql_swift Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Enumerations  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/PGConnection.html">PGConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PGNotify.html">PGNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PGResult.html">PGResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/PGConnStatus.html">PGConnStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGError.html">PGError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGResultStatus.html">PGResultStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGTransactionStatus.html">PGTransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Enumerations</h1>
+            <p>The following enumerations are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift7PGErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/PGError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift7PGErrorO">PGError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Enums/PGError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PGError</span><span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/PGConnStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnStatusO">PGConnStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>PGConn Status Enumeration Adapter</p>
+
+<p><em>Values</em></p>
+
+<p><code>ok</code> Connection is ready</p>
+
+<p><code>bad</code> Connection procedure has failed</p>
+
+<p><code>started</code> Waiting for connection to be made.</p>
+
+<p><code>made</code> Connection OK; waiting to send.</p>
+
+<p><code>awaitingRsponse</code> Waiting for a response from the postmaster.</p>
+
+<p><code>authenticationOk</code> Received authentication; waiting for backend startup.</p>
+
+<p><code>setenv</code> Negotiating environment-driven parameter settings.</p>
+
+<p><code>sslStartup</code> Negotiating SSL encryption.</p>
+
+<p><code>needed</code> Internal state: connect() needed</p>
+
+<p><code>checkWritable</code> Checking if connection is able to handle write transactions.</p>
+
+<p><code>consume</code> Consuming any remaining response messages on connection.</p>
+
+<p>Outside of an asynchronous connection procedure only <code>ok</code> and <code>bad</code> are seen.</p>
+
+                        <a href="Enums/PGConnStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PGConnStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift19PGTransactionStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/PGTransactionStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift19PGTransactionStatusO">PGTransactionStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In-transaction status</p>
+
+<p><em>values</em></p>
+
+<p><code>idle</code> currently idle</p>
+
+<p><code>active</code> a command is in progress</p>
+
+<p>Is reported only when a query has been sent to the server and not yet completed.</p>
+
+<p><code>idleTransaction</code> idle, in a valid transaction block</p>
+
+<p><code>idleFailedTransaction</code> idle, in a failed transaction block</p>
+
+<p><code>unkown</code> is reported if the connection is bad</p>
+
+                        <a href="Enums/PGTransactionStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PGTransactionStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift14PGResultStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/PGResultStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift14PGResultStatusO">PGResultStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result Status</p>
+
+<p><em>values</em></p>
+
+<p><code>emptyQuery</code> The string sent to the server was empty.</p>
+
+<p><code>commandOK</code> Successful completion of a command returning no data.</p>
+
+<p><code>tuplesOK</code> Successful completion of a command returning data (such as a SELECT or SHOW).</p>
+
+<p><code>copyOut</code> Copy Out (from server) data transfer started.</p>
+
+<p><code>copyIn</code> Copy In (to server) data transfer started.</p>
+
+<p><code>badResponse</code> The server&rsquo;s response was not understood.</p>
+
+<p><code>nonfatalError</code> A nonfatal error (a notice or warning) occurred.</p>
+
+<p><code>fatalError</code> A fatal error occurred.</p>
+
+<p><code>copyBoth</code> Copy In/Out (to and from server) data transfer started.
+This feature is currently used only for streaming replication, so this status
+should not occur in ordinary applications.</p>
+
+<p><code>singleTuple</code> The PGresult contains a single result tuple from the current command.
+This status occurs only when single-row mode has been selected for the query</p>
+
+                        <a href="Enums/PGResultStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PGResultStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

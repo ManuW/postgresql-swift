@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PGConnection Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PGConnection" class="dashAnchor"></a>
+    <a title="PGConnection Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">postgresql_swift Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">postgresql_swift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PGConnection Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PGConnection.html">PGConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGNotify.html">PGNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PGResult.html">PGResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PGConnStatus.html">PGConnStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGError.html">PGError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGResultStatus.html">PGResultStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PGTransactionStatus.html">PGTransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PGConnection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PGConnection</span></code></pre>
+
+                </div>
+              </div>
+            <p>Class to handle PGconn object</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6pgConns13OpaquePointerVv"></a>
+                    <a name="//apple_ref/swift/Property/pgConn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6pgConns13OpaquePointerVv">pgConn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pointer to PGconn object that encapsulates a connection to the backend.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">pgConn</span><span class="p">:</span> <span class="kt">OpaquePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionCACSS4info_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(info:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionCACSS4info_tKcfc">init(info:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Makes a new connection to the database server.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>PGError.unexpectedResult if there is too litte memory to allocate.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">info</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>info</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PostgreSQL Connection String.
+The passed string can be empty to use all default parameters, or it can
+contain one or more parameter settings separated by whitespace,
+or it can contain a URI.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionCfd"></a>
+                    <a name="//apple_ref/swift/Method/deinit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionCfd">deinit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">deinit</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6finish33_8A793DAF0209DF271BE5EC4561B1978CLLyyF"></a>
+                    <a name="//apple_ref/swift/Method/finish()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6finish33_8A793DAF0209DF271BE5EC4561B1978CLLyyF">finish()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closes the connection to the server. Also frees memory used by the PGconn object.</p>
+
+<p>Note that even if the server connection attempt fails (as indicated by status()),
+the application should call finish() to free the memory used by the PGconn object.
+The PGconn pointer must not be used again after finish() has been called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">finish</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6statusAA12PGConnStatusOyKF"></a>
+                    <a name="//apple_ref/swift/Method/status()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6statusAA12PGConnStatusOyKF">status()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Status of the connection</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>PGError.invalidConnStatus if the status is not valid</p>
+
+</div>
+
+<p>At any time during connection, the status of the connection can be checked
+by calling status(). If this call returns PGConnStatus.bad, then the connection
+procedure has failed; if the call returns PGConnStatus.ok, then the connection
+is ready. Other states might also occur during (and only during) an asynchronous
+connection procedure. These indicate the current stage of the connection
+procedure and might be useful to provide feedback to the user for example.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">status</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/PGConnStatus.html">PGConnStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>status of the connection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC5resetyyF"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC5resetyyF">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the communication channel to the server.</p>
+
+<p>This function will close the connection to the server and attempt to reestablish
+a new connection to the same server, using all the same parameters previously
+used. This might be useful for error recovery if a working connection is lost.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC12databaseNameSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/databaseName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC12databaseNameSSSgv">databaseName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Database name of the connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC8userNameSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/userName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC8userNameSSSgv">userName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User name of the connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">userName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC8passwordSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/password" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC8passwordSSSgv">password</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Password of the connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC8hostNameSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/hostName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC8hostNameSSSgv">hostName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Server host name of the connection.</p>
+
+<p>This can be a host name, an IP address, or a directory path if the
+connection is via Unix socket. (The path case can be distinguished
+because it will always be an absolute path, beginning with /.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hostName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC4portSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/port" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC4portSSSgv">port</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Port of the connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC18commandLineOptionsSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/commandLineOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC18commandLineOptionsSSSgv">commandLineOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Command-line options passed in the connection request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">commandLineOptions</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC17transactionStatusAA013PGTransactionE0OSgyF"></a>
+                    <a name="//apple_ref/swift/Method/transactionStatus()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC17transactionStatusAA013PGTransactionE0OSgyF">transactionStatus()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current in-transaction status of the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transactionStatus</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/PGTransactionStatus.html">PGTransactionStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC15protocolVersions5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/protocolVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC15protocolVersions5Int32Vv">protocolVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interrogates the frontend/backend protocol being used.</p>
+
+<p>Applications might wish to use this function to determine whether certain
+features are supported. Currently, the possible values are 2 (2.0 protocol),
+3 (3.0 protocol), or zero (connection bad). The protocol version will not change
+after connection startup is complete, but it could theoretically change during
+a connection reset. The 3.0 protocol will normally be used when communicating
+with PostgreSQL 7.4 or later servers; pre-7.4 servers support only protocol 2.0.
+(Protocol 1.0 is obsolete and not supported by libpq.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">protocolVersion</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC13serverVersionSi5major_Si8submajorSi5minortv"></a>
+                    <a name="//apple_ref/swift/Property/serverVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC13serverVersionSi5major_Si8submajorSi5minortv">serverVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an integer representing the server version.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>See rawServerVersion() for details</p>
+
+</div>
+
+<p>Example version 10.1  -&gt; 100001 -&gt; major: 10, submajor: 0, minor: 1
+Example version 11.0  -&gt; 110000 -&gt; major: 11, submajor: 0, minor: 0
+Example version 9.2.0 -&gt;  90200 -&gt; major:  9, submajor: 2: minor: 0
+Example version 9.1.5 -&gt;  90105 -&gt; major:  9, submajor: 1, minor: 5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">serverVersion</span><span class="p">:</span> <span class="p">(</span><span class="nv">major</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">submajor</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minor</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The major, submajor and minor number</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC16rawServerVersions5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/rawServerVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC16rawServerVersions5Int32Vv">rawServerVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the server version number.</p>
+
+<p>Applications might use this function to determine the version of the database
+server they are connected to. The result is formed by multiplying the server&rsquo;s
+major version number by <code>10000</code> and adding the minor version number. For example,
+version 10.1 will be returned as <code>100001</code>, and version 11.0 will be returned as
+<code>110000</code>. Zero is returned if the connection is bad.</p>
+
+<p>Prior to major version 10, PostgreSQL used three-part version numbers in which
+the first two parts together represented the major version. For those versions,
+serverVersion() uses two digits for each part; for example version 9.1.5 will
+be returned as <code>90105</code>, and version 9.2.0 will be returned as 90200.</p>
+
+<p>Therefore, for purposes of determining feature compatibility, applications
+should divide the result of serverVersion() by <code>100</code> not <code>10000</code> to determine a
+logical major version number. In all release series, only the last two digits
+differ between minor releases (bug-fix releases).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rawServerVersion</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC12errorMessageSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/errorMessage()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC12errorMessageSSSgyF">errorMessage()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the error message most recently generated by an operation on the connection.</p>
+
+<p>Nearly all libpq functions will set a message for PQerrorMessage if they
+fail. Note that by libpq convention, a nonempty PQerrorMessage result can
+consist of multiple lines, and will include a trailing newline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">errorMessage</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Error message</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6sockets5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/socket" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6sockets5Int32Vv">socket</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Obtains the file descriptor number of the connection socket to the server.</p>
+
+<p>A valid descriptor will be greater than or equal to 0; a result of -1 indicates
+that no server connection is currently open. (This will not change during
+normal operation, but could change during connection setup or reset.)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">socket</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The file descriptor</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC10backendPids5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/backendPid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC10backendPids5Int32Vv">backendPid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The process ID (PID) of the backend process handling this connection.</p>
+
+<p>The backend PID is useful for debugging purposes and for comparison to
+NOTIFY messages (which include the PID of the notifying backend process).
+Note that the PID belongs to a process executing on the database server
+host, not the local host!</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">backendPid</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>process ID</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC23connectionNeedsPasswordSbv"></a>
+                    <a name="//apple_ref/swift/Property/connectionNeedsPassword" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC23connectionNeedsPasswordSbv">connectionNeedsPassword</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>True if the connection authentication method required a password, but none was available</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionNeedsPassword</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC8sslInUseSbv"></a>
+                    <a name="//apple_ref/swift/Property/sslInUse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC8sslInUseSbv">sslInUse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>True if connections uses SSL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sslInUse</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC4execAA8PGResultCSS9statement_tKF"></a>
+                    <a name="//apple_ref/swift/Method/exec(statement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC4execAA8PGResultCSS9statement_tKF">exec(statement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Submits a command to the server and waits for the result.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>PGError.fatal after out-of-memory conditions or serious errors such
+as inability to send the command to the server.</p>
+
+</div>
+
+<p>The result status should be checked for any errors. Use result errorMessage
+to get more information about such errors.</p>
+
+<p>The command string can include multiple SQL commands (separated by semicolons).
+Multiple queries sent in a single exec() call are processed in a single transaction,
+unless there are explicit BEGIN/COMMIT commands included in the query string
+to divide it into multiple transactions. Note however that the returned PGResult
+object describes only the result of the last command executed from the string.
+Should one of the commands fail, processing of the string stops with it and
+the returned PGResult describes the error condition.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exec</span><span class="p">(</span><span class="nv">statement</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PGResult.html">PGResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A PGResult object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC9sendQueryySS9statement_tKF"></a>
+                    <a name="//apple_ref/swift/Method/sendQuery(statement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC9sendQueryySS9statement_tKF">sendQuery(statement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Submits a command to the server without waiting for the result(s).</p>
+
+<p>After successfully calling sendQuery(), call result() one or more times to
+obtain the results. sendQuery() cannot be called again (on the same connection)
+until getResult() has returned nil, indicating that the command is done.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendQuery</span><span class="p">(</span><span class="nv">statement</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6resultAA8PGResultCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/result()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6resultAA8PGResultCSgyF">result()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Waits for the next result.</p>
+
+<p>Nil is returned when the command is complete and there will be no more results.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">result</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PGResult.html">PGResult</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC10allResultsSayAA8PGResultCGyF"></a>
+                    <a name="//apple_ref/swift/Method/allResults()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC10allResultsSayAA8PGResultCGyF">allResults()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Waits for the next result and returns all result(s).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allResults</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/PGResult.html">PGResult</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC10eachResultyyAA8PGResultCcF"></a>
+                    <a name="//apple_ref/swift/Method/eachResult(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC10eachResultyyAA8PGResultCcF">eachResult(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">eachResult</span><span class="p">(</span><span class="n">_</span> <span class="nv">handle</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/PGResult.html">PGResult</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC12consumeInputyyKF"></a>
+                    <a name="//apple_ref/swift/Method/consumeInput()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC12consumeInputyyKF">consumeInput()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If input is available from the server, consume it.</p>
+
+<p>If there was some kind of trouble consumeInput() throws PostgreSQLError.
+A successful return does not say whether any input data was actually
+collected. After calling consumeInput(), the application can check
+isBusy() and/or notifies() to see if their state has changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">consumeInput</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC6isBusySbyF"></a>
+                    <a name="//apple_ref/swift/Method/isBusy()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC6isBusySbyF">isBusy()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns true if a command is busy.</p>
+
+<p>Busy means, getResult() would block waiting for input. false indicates
+that getResult() can be called with assurance of not blocking. isBusy()
+will not itself attempt to read data from the server; therefore
+consumeInput() must be invoked first, or the busy state will never end.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isBusy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC16nextNotificationAA8PGNotifyCSgyF"></a>
+                    <a name="//apple_ref/swift/Method/nextNotification()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC16nextNotificationAA8PGNotifyCSgyF">nextNotification()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>notifies() returns the next notification from a list of unhandled
+notification messages received from the server.</p>
+
+<p>It returns nil if there are no pending notifications. Once a notification
+is returned from notifies(), it is considered handled and will be removed
+from the list of notifications.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nextNotification</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PGNotify.html">PGNotify</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC16eachNotificationyyAA8PGNotifyCcF"></a>
+                    <a name="//apple_ref/swift/Method/eachNotification(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC16eachNotificationyyAA8PGNotifyCcF">eachNotification(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">eachNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">handle</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/PGNotify.html">PGNotify</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Control%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Control Functions" class="dashAnchor"></a>
+                <a href="#/Control%20Functions">
+                  <h3 class="section-name">Control Functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC17rawClientEncodings5Int32Vv"></a>
+                    <a name="//apple_ref/swift/Property/rawClientEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC17rawClientEncodings5Int32Vv">rawClientEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the client encoding.</p>
+
+<p>Note that it returns the encoding ID, not a symbolic string such as EUC_JP.
+If unsuccessful, it returns -1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rawClientEncoding</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC14clientEncodingSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/clientEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC14clientEncodingSSSgv">clientEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the client encoding as String.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientEncoding</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC5traceySpySC7__sFILEVG6stream_tF"></a>
+                    <a name="//apple_ref/swift/Method/trace(stream:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC5traceySpySC7__sFILEVG6stream_tF">trace(stream:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables tracing of the client/server communication to a debugging file stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trace</span><span class="p">(</span><span class="nv">stream</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">FILE</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGConnectionC7untraceyyF"></a>
+                    <a name="//apple_ref/swift/Method/untrace()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGConnectionC7untraceyyF">untrace()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables tracing started by PQtrace.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untrace</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

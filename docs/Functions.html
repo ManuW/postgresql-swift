@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functions  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Functions  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">postgresql_swift Docs</a> (72% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">postgresql_swift Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Functions  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/PGConnection.html">PGConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PGNotify.html">PGNotify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PGResult.html">PGResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/PGConnStatus.html">PGConnStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGError.html">PGError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGResultStatus.html">PGResultStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PGTransactionStatus.html">PGTransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Functions</h1>
+            <p>The following functions are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF"></a>
+                    <a name="//apple_ref/swift/Function/PGlibVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift12PGlibVersionSi5major_Si8submajorSi5minortyF">PGlibVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the version of libpq that is being used.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>See PGlibRawVersion() for details</p>
+
+</div>
+
+<p>Example version 10.1  -&gt; 100001 -&gt; major: 10, submajor: 0, minor: 1<br/>
+Example version 11.0  -&gt; 110000 -&gt; major: 11, submajor: 0, minor: 0<br/>
+Example version 9.2.0 -&gt;  90200 -&gt; major:  9, submajor: 2: minor: 0<br/>
+Example version 9.1.5 -&gt;  90105 -&gt; major:  9, submajor: 1, minor: 5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">PGlibVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">major</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">submajor</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">minor</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The major, submajor and minor number</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16postgresql_swift15PGlibRawVersions5Int32VyF"></a>
+                    <a name="//apple_ref/swift/Function/PGlibRawVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16postgresql_swift15PGlibRawVersions5Int32VyF">PGlibRawVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the version of libpq that is being used.</p>
+
+<p>The result of this function can be used to determine, at run time, whether specific
+functionality is available in the currently loaded version of libpq. The function
+can be used, for example, to determine which connection options are available in
+PQconnectdb.</p>
+
+<p>The result is formed by multiplying the library&rsquo;s major version number by 10000
+and adding the minor version number. For example, version 10.1 will be returned
+as 100001, and version 11.0 will be returned as 110000.</p>
+
+<p>Prior to major version 10, PostgreSQL used three-part version numbers in which
+the first two parts together represented the major version. For those versions,
+PQlibVersion uses two digits for each part; for example version 9.1.5 will be
+returned as 90105, and version 9.2.0 will be returned as 90200.</p>
+
+<p>Therefore, for purposes of determining feature compatibility, applications should
+divide the result of PQlibVersion by 100 not 10000 to determine a logical major
+version number. In all release series, only the last two digits differ between
+minor releases (bug-fix releases).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">PGlibRawVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
