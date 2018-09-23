@@ -78,7 +78,7 @@ do {
 
     // Set always-secure search path, so malicous users can't take control.
     var res = try conn.exec(statement: "SELECT pg_catalog.set_config('search_path', '', false)")
-    try ensureCommandOK(result: res)
+    try ensureCommandTuplesOK(result: res)
 
     // Our test case here involves using a cursor, for which we must be inside a
     // transaction block. We could do the whole thing with a single `exec()` of
