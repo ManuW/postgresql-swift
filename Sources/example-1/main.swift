@@ -7,7 +7,7 @@ import Foundation
 
 extension String {
     // A simple extension to keep string length to be 15 characters (or greater).
-    // This should be enough for case.
+    // That should be enough in this case.
     func appendPadding() -> String {
         let toLength = 15
         let length = self.count
@@ -20,18 +20,18 @@ extension String {
 
 
 enum ExampleError: Error {
-    case okConnection(reason: String)
-    case okCommand(reason: String)
-    case tuplesOKCommand(reason: String)
+    case notOkConnection(reason: String)
+    case notOkCommand(reason: String)
+    case tuplesNotOkCommand(reason: String)
 }
 
-func printError(exampleError error: ExampleError) {
+func printError(_ error: ExampleError) {
     switch error {
-    case .okConnection(let reason):
+    case .notOkConnection(let reason):
         print("Connection Not OK: \(reason)")
-    case .okCommand(let reason):
+    case .notOkCommand(let reason):
         print("Command Not OK: \(reason)")
-    case .tuplesOKCommand(let reason):
+    case .tuplesNotOkCommand(let reason):
         print("Tuples Not OK: \(reason)")
     }
 }
@@ -39,27 +39,30 @@ func printError(exampleError error: ExampleError) {
 func ensureConnectionOK(connection conn: PGConnection) throws {
     let status = try? conn.status()
     if status != PGConnStatus.ok {
-        // FIXME status ...
+        let description = status?.description ?? "nil"
+        printDebug("Result Status: Not equal to connection ok ~ \(description)")
         let msg = conn.errorMessage() ?? "MISSING ERROR MESSAGE"
-        throw ExampleError.okConnection(reason: msg)
+        throw ExampleError.notOkConnection(reason: msg)
     }
 }
 
 func ensureCommandOK(result: PGResult) throws {
     let status = result.status
     if status != PGResultStatus.commandOK {
-        // FIXME status ...
+        let description = status?.description ?? "nil"
+        printDebug("Result Status: Not equal to command ok ~ \(description)")
         let msg = result.errorMessage ?? "MISSING RESULT ERROR MESSAGE"
-        throw ExampleError.okCommand(reason: msg)
+        throw ExampleError.notOkCommand(reason: msg)
     }
 }
 
 func ensureCommandTuplesOK(result: PGResult) throws {
     let status = result.status
     if status != PGResultStatus.tuplesOK {
-        // FIXME status ...
+        let description = status?.description ?? "nil"
+        printDebug("Result Status: Not equal to tuples ok ~ \(description)")
         let msg = result.errorMessage ?? "MISSING RESULT ERROR MESSAGE"
-        throw ExampleError.tuplesOKCommand(reason: msg)
+        throw ExampleError.tuplesNotOkCommand(reason: msg)
     }
 }
 
@@ -67,18 +70,22 @@ do {
     // Our default connection info string
     let connInfo = "postgresql://postgres@localhost:5432/postgres"
 
-    // Make a connection to the database
+    // Make a PGConnection object to our database
     let conn = try PGConnection(info: connInfo)
 
     // Check to see that the backend connection was successfully made
     try ensureConnectionOK(connection: conn)
+
+    // Set always-secure search path, so malicous users can't take control.
+    var res = try conn.exec(statement: "SELECT pg_catalog.set_config('search_path', '', false)")
+    try ensureCommandOK(result: res)
 
     // Our test case here involves using a cursor, for which we must be inside a
     // transaction block. We could do the whole thing with a single `exec()` of
     // `select * from pg_database`, but that's too trivial to make a good example.
 
     // Start a transaction block
-    var res = try conn.exec(statement: "BEGIN")
+    res = try conn.exec(statement: "BEGIN")
     try ensureCommandOK(result: res)
 
     // Fetch rows from pg_database, the system catalog of databases
@@ -113,7 +120,7 @@ do {
     try conn.exec(statement: "END")
 
 } catch let error as ExampleError {
-    printError(exampleError: error)
+    printError(error)
     exit(1)
 } catch {
     print("Something going wrong")
