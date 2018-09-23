@@ -5,19 +5,23 @@ import PackageDescription
 
 let package = Package(
     name: "postgresql-swift",
-    swiftLanguageVersions: [.v4, .v4_2],
     products: [
+        .library(name: "CLibpq", targets:["CLibpq"]),
         .library(name: "postgresql-swift", targets: ["postgresql-swift"]),
         .executable(name: "example-1", targets: ["example-1"]),
         .executable(name: "example-2", targets: ["example-2"]),
     ],
     targets: [
         .systemLibrary(
-            name: "libpq"
+            name: "CLibpq",
+            pkgConfig: "libpq",
+            providers: [
+                .brew(["postgresql"])
+            ]
         ),
         .target(
             name: "postgresql-swift",
-            dependencies: []
+            dependencies: ["CLibpq"]
         ),
         .target(
             name: "example-1",
@@ -31,5 +35,6 @@ let package = Package(
             name: "postgresql-swiftTests",
             dependencies: ["postgresql-swift"]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v4_2]
 )
