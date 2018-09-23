@@ -40,7 +40,7 @@ func ensureConnectionOK(connection conn: PGConnection) throws {
     let status = try? conn.status()
     if status != PGConnStatus.ok {
         let description = status?.description ?? "nil"
-        printDebug("Result Status: Not equal to connection ok ~ \(description)")
+        debugPrint("Result Status: Not equal to connection ok ~ \(description)")
         let msg = conn.errorMessage() ?? "MISSING ERROR MESSAGE"
         throw ExampleError.notOkConnection(reason: msg)
     }
@@ -50,7 +50,7 @@ func ensureCommandOK(result: PGResult) throws {
     let status = result.status
     if status != PGResultStatus.commandOK {
         let description = status?.description ?? "nil"
-        printDebug("Result Status: Not equal to command ok ~ \(description)")
+        debugPrint("Result Status: Not equal to command ok ~ \(description)")
         let msg = result.errorMessage ?? "MISSING RESULT ERROR MESSAGE"
         throw ExampleError.notOkCommand(reason: msg)
     }
@@ -60,7 +60,7 @@ func ensureCommandTuplesOK(result: PGResult) throws {
     let status = result.status
     if status != PGResultStatus.tuplesOK {
         let description = status?.description ?? "nil"
-        printDebug("Result Status: Not equal to tuples ok ~ \(description)")
+        debugPrint("Result Status: Not equal to tuples ok ~ \(description)")
         let msg = result.errorMessage ?? "MISSING RESULT ERROR MESSAGE"
         throw ExampleError.tuplesNotOkCommand(reason: msg)
     }
