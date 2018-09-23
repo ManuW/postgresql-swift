@@ -284,6 +284,60 @@ public enum PGResultStatus {
     }
 }
 
+extension PGResultStatus: CustomStringConvertible {
+    public var description: String {
+        switch self {
+        case .emptyQuery:
+            return "Empty Query"
+        case .commandOK:
+            return "Command OK"
+        case .tuplesOK:
+            return "Tuples OK"
+        case .copyOut:
+            return "Copy Out"
+        case .copyIn:
+            return "Copy In"
+        case .badResponse:
+            return "Bad Response"
+        case .nonfatalError:
+            return "Non Fatal Error"
+        case .fatalError:
+            return "Fatal Error"
+        case .copyBoth:
+            return "Copy Both"
+        case .singleTuple:
+            return "Single Tuple"
+        }
+    }
+}
+
+extension PGResultStatus: CustomDebugStringConvertible {
+    public var debugDescription: String {
+        switch self {
+        case .emptyQuery:
+            return "Empty Query: The string sent to the server was empty"
+        case .commandOK:
+            return "Command OK: Successful completion of a command returning no data"
+        case .tuplesOK:
+            return "Tuples OK: Successful completion of a command returning data (such as a SELECT or SHOW)"
+        case .copyOut:
+            return "Copy Out: Copy Out (from server) data transfer started"
+        case .copyIn:
+            return "Copy In: Copy In (to server) data transfer started"
+        case .badResponse:
+            return "Bad Response: The server's response was not understood"
+        case .nonfatalError:
+            return "Non Fatal Error: A nonfatal error (a notice or warning) occurred"
+        case .fatalError:
+            return "Fatal Error: A fatal error occurred"
+        case .copyBoth:
+            return "Copy Both: Copy In/Out (to and from server) data transfer started"
+        case .singleTuple:
+            return "Single Tuple: The PGresult contains a single result tuple from the current command"
+        }
+    }
+}
+
 public final class PGResult {
 
     /// The result pointer
