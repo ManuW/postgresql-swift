@@ -162,6 +162,35 @@ public enum PGConnStatus {
     }
 }
 
+extension PGConnStatus: CustomStringConvertible {
+    public var description: String {
+        switch self {
+        case .ok:
+            return "Connection is ready"
+        case .bad:
+            return "Connection procedure has failed"
+        case .started:
+            return "Waiting for  connection to be made."
+        case .made:
+            return "Conneciton OK; waiting to send."
+        case .awaitingRsponse:
+            return "Waiting for a response from the postmaster."
+        case .authenticationOk:
+            return "Waiting for a response from the postmaster."
+        case .setenv:
+            return "Received authentication; waiting for backend startup."
+        case .sslStartup:
+            return "Negotiating SSL encryption."
+        case .needed:
+            return "Internal state: connect() needed"
+        case .checkWritable:
+            return "Checking if connection is able to handle write transactions."
+        case .consume:
+            return "Consuming any remaining response messages on connection."
+        }
+    }
+}
+
 /**
  In-transaction status
 
