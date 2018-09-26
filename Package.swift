@@ -1,15 +1,13 @@
 // swift-tools-version:4.2
 
-
 import PackageDescription
 
 let package = Package(
     name: "postgresql-swift",
     products: [
-        .library(name: "CLibpq", targets:["CLibpq"]),
         .library(name: "postgresql-swift", targets: ["postgresql-swift"]),
         .executable(name: "example-1", targets: ["example-1"]),
-        .executable(name: "example-2", targets: ["example-2"]),
+        .executable(name: "example-2", targets: ["example-2"])
     ],
     targets: [
         .systemLibrary(

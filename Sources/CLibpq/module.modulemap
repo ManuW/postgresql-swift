@@ -1,0 +1,5 @@
+
+module CLibpq {
+    umbrella header "pq.h"
+    link "pg"
+}

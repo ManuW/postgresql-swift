@@ -1,4 +1,4 @@
-import Clibpq
+import CLibpq
 import Foundation
 
 /// PostgreSQL swift adapter
