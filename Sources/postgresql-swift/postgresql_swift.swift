@@ -274,15 +274,35 @@ public enum PGTransactionStatus {
  This status occurs only when single-row mode has been selected for the query
  */
 public enum PGResultStatus {
+    
+    /// The string sent to the server was empty.
     case emptyQuery
+
+    /// Successful completion of a command returning no data.
     case commandOK
+   
+    /// Successful completion of a command returning data (such as a SELECT or SHOW).
     case tuplesOK
+    
+    /// Copy Out (from server) data transfer started.
     case copyOut
+    
+    /// Copy In (to server) data transfer started.
     case copyIn
+    
+    /// The server's response was not understood.
     case badResponse
+    
+    /// A nonfatal error (a notice or warning) occurred.
     case nonfatalError
+    
+    /// A fatal error occurred.
     case fatalError
+    
+    /// Copy In/Out (to and from server) data transfer started.
     case copyBoth
+    
+    /// The PGresult contains a single result tuple from the current command.
     case singleTuple
 
     init?(execStatus: ExecStatusType) {
